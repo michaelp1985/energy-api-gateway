@@ -23,7 +23,7 @@ describe('AppController', () => {
     it('should call the getEnergyData() method of the AppService', () => {
       appController.getEnergyData('US', '202101', '202101');
 
-      expect(mockAppService.getEnergyData).toBeCalled();
+      expect(mockAppService.getEnergyData).toHaveBeenCalled();
     });
   });
 });
